@@ -21,7 +21,9 @@ def home():
     humid=(resultat["data"]["sensors"][1]["value"])
     batt=(resultat["data"]["sensors"][0]["value"])
     nivso=(resultat["data"]["sensors"][6]["value"])
-    return page.render(temperature =str(temp), humidity=str(humid), batterie=str(batt), nivso=str(nivso))
+    Sol=(resultat['data']['sensors'][7]['value'])
+    CO=(resultat['data']['sensors'][3]['value'])
+    return page.render(temperature =str(temp), humidity=str(humid), batterie=str(batt), nivso=str(nivso), sol=str(Sol), co=str(CO))
 
 
 
