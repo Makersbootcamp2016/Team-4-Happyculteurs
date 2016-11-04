@@ -44,6 +44,11 @@ def camera():
         page=jinja_env.get_template("camera.html")
         return page.render ()
 
+@news.route("/news")
+def news():
+    page=jinja_env.get_template("news.html")
+    return page.render()
+
 
 @app.route("/clak")
 def clak():
