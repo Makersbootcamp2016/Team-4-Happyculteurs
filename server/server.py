@@ -30,6 +30,22 @@ def home():
     CO=(resultat['data']['sensors'][3]['value'])
     return page.render(temperature =str(temp), humidity=str(humid), batterie=str(batt), nivso=str(nivso), sol=str(Sol), co=str(CO))
 
+@app.route("/makers")
+def makers():
+    page=jinja_env.get_template("makers.html")
+    return ???
+
+@app.route("/maps")
+def maps():
+    page=jinja_env.get_template("maps.html")
+    return ???
+
+@app.route("/camera")
+def camera():
+        page=jinja_env.get_template("camera.html")
+        return ???
+
+
 @app.route("/clak")
 def clak():
     time.sleep(15)
