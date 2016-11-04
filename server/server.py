@@ -56,9 +56,6 @@ def shot():
        return 'SUCCESS'
    return 'ERROR: You\'re lost Dave..'
 
-    page = jinja_env.get_template('maps.html')
-    return page.render(latitude = str(Lat), longitude = str(Long))
-
 
 if __name__ == "__main__":
    app.run(port=8000)
