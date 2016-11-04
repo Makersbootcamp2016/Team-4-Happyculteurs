@@ -33,17 +33,16 @@ def home():
 @app.route("/makers")
 def makers():
     page=jinja_env.get_template("makers.html")
-    return ???
-
+    return page.render ()
 @app.route("/maps")
 def maps():
     page=jinja_env.get_template("maps.html")
-    return ???
+    return page.render ()
 
 @app.route("/camera")
 def camera():
         page=jinja_env.get_template("camera.html")
-        return ???
+        return page.render ()
 
 
 @app.route("/clak")
